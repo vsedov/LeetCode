@@ -1,0 +1,21 @@
+An interesting question if i do say my self .
+
+with this we allow a vowel map to be create in the position of the values
+
+
+we loop over the values , that we have to create a system
+
+once that is done we create a default dict , that has a default int placed for us . we use that to push forward the ammount that we want . .
+
+
+
+we then use the dp list , that contains the ammount of values that we have as of this moment , and we use that to push forward the current letter within the list .
+
+once that is done , we have to map the letters onto each other , which is rather important .
+
+so that a vowel map on the ky is the next letter .
+
+
+for each letter within the next_letter map , we would check the next_dp , which is the default dict .
+
+in doing so , we have to add on the ammount that we already have , modular the ammount that is before to get a better value
