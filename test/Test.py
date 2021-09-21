@@ -19,20 +19,10 @@ def main() -> None:
         ic(x[i - 1 : i], x[i - 2 : i])
 
 
-"""
 
-    When you want a unique value , for each pointer within the list , we would use i -1 within range of i
-    If we want the next two given values , or the two given substring , we would take those values instead . 
-
-    than what you would get is teh following , you would get all possible optionsiwthin teh next values from 1 2 2 3 and so on 
-    if you did i - 2 : i 
-
-    , which is kinda cool , while x - 1 : i will only give 2 to the given length, the other one will not , which i found rather interesting 
-
-    what you would end up having is a list of indomation that would be get updated overtime , or where you would add teh values onto each other , for how ever many pointers you have
-
-"""
-
+    # What a fuck way of doing something , but ah well it works in this case
+    print(int(''.join( list(reversed(list(str(32)))))))
+    
 
 if __name__ == "__main__":
     pi.install_traceback()
