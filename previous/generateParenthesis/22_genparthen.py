@@ -21,18 +21,18 @@ class Solution:
         main_stack, current_string = [], ""
 
         def backtracker(
-            main_stack: List[str], current: str, open: int, close: int
-        ) -> None:
+                main_stack: List[str], current: str, open: int, close: int
+            ) -> None:
             # we have some base case
             if len(current) == 2 * n:
                 main_stack.append(current)
                 return
 
             if open < n:
-                backtracker(main_stack, current + "(", open + 1, close)
+                backtracker(main_stack, f"{current}(", open + 1, close)
 
             if close < open:
-                backtracker(main_stack, current + ")", open, close + 1)
+                backtracker(main_stack, f"{current})", open, close + 1)
 
         backtracker(main_stack, current_string, 0, 0)
 

@@ -16,12 +16,7 @@ class Solution:
         # Ah so this sortes it the other way
         print(sorted_arr)
 
-        result = []
-        # and then you just do it in range of what ever k , was that is rather
-        # clean
-        for i in range(k):
-            result.append(sorted_arr[i])
-
+        result = [sorted_arr[i] for i in range(k)]
         return sorted(result)
 
 

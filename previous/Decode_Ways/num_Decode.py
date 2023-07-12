@@ -22,7 +22,7 @@ class Solution:
         if s == "0":
             return 0
 
-        dp = [0 for x in range(len(s) + 1)]
+        dp = [0 for _ in range(len(s) + 1)]
 
         dp[0] = 1
         dp[1] = 0 if s[0] == "0" else 1

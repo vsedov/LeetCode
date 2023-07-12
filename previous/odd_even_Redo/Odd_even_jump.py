@@ -54,7 +54,7 @@ class Solution:
                 nxt_min[st.pop()] = index
             st.append(index)
 
-        dp = [[False, False] for i in range(self.legnth)]
+        dp = [[False, False] for _ in range(self.legnth)]
         dp[-1] = [True, True]
 
         for index in range(self.legnth - 2, -1, -1):

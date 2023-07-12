@@ -17,7 +17,7 @@ class Solution:
     def getMaximumGenerated(self, n: int) -> int:
 
         # One of the main base cases
-        if n in [0, 1]:
+        if n in {0, 1}:
             return n
 
         dp, max_val = [0] * (n + 1), 0

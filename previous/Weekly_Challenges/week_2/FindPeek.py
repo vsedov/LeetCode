@@ -21,10 +21,9 @@ class Solution:
 
         length = len(nums)
 
-        for i in range(length - 1):
-            if nums[i] > nums[i + 1]:
-                return i
-        return length - 1
+        return next(
+            (i for i in range(length - 1) if nums[i] > nums[i + 1]), length - 1
+        )
 
 
 def main() -> None:
