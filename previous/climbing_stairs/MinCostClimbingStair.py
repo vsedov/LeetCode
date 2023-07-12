@@ -15,7 +15,7 @@ import pyinspect as pi
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        if len(cost) == 0:
+        if not cost:
             return 0
 
         dp = [0] * len(cost)

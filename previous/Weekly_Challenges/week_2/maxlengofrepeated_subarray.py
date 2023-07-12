@@ -23,7 +23,7 @@ class Solution:
         len_1 = len(nums1)
         len_2 = len(nums2)
 
-        dp = [[0] * (len_1 + 1) for i in range(len_2)]
+        dp = [[0] * (len_1 + 1) for _ in range(len_2)]
 
         container = 0
         for i in range(len_1):

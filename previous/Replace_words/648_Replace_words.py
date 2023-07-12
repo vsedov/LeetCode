@@ -44,7 +44,6 @@ def main() -> None:
             sentence="a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa",
         )
     )
-    pass
 
 
 if __name__ == "__main__":

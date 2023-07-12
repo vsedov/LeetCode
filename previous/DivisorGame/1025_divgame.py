@@ -24,7 +24,7 @@ class Solution:
 
         for i in range(1, n):
             if main_number % i == 0:
-                n = n - i
+                n -= i
 
         return (main_number % 2) == 0
 

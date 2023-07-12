@@ -45,8 +45,6 @@ class Solution:
 def main() -> None:
     print(Solution().subarraySum([3, 4, 7, 2, -3, 1, 4, 2], 7))
 
-    pass
-
 
 if __name__ == "__main__":
     pi.install_traceback()

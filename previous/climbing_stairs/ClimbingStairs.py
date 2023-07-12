@@ -19,7 +19,7 @@ class Solution:
     @cache
     def climbStairs(self, n: int) -> int:
         prev, second_prev = 1, 1
-        for i in range(n - 1, -1, -1):
+        for _ in range(n - 1, -1, -1):
             prev, second_prev = (prev + second_prev), prev
 
         return second_prev

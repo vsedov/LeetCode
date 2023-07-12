@@ -27,7 +27,7 @@ class Solution:
             if prev + 1 == arr[i]:
                 current += 1
 
-            elif prev + 1 != arr[i] and prev != arr[i]:
+            elif prev != arr[i]:
                 longest = max(longest, current)
                 current = 1
 
@@ -63,8 +63,6 @@ def main() -> None:
     print(Solution().longestConsecutive([0]) == 1)
     print(Solution().longestConsecutive([]) == 0)
     print(Solution().longestConsecutive([9, 1, 4, 7, 3, -1, 0, 5, 8, -1, 6]) == 7)
-
-    pass
 
 
 if __name__ == "__main__":
